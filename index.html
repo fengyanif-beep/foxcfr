@@ -1,35 +1,142 @@
-{\rtf1\ansi\ansicpg936\cocoartf2709 \cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;} {\colortbl;\red255\green255\blue255;} {\*\expandedcolortbl;;} \paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0 \f0\fs24 \cf0 \ \ \ \ \ \ \ \ \ \ \ \ \ \
-\ \uc0\u55356 \u56811 \u55356 \u56823 \ \uc0\u55356 \u56812 \u55356 \u56807 \ \uc0\u55356 \u56808 \u55356 \u56819 \ \uc0\u55356 \u56815 \u55356 \u56821 \
-\ \ \
-\
-Fox C
-\
-\ Le Paddington de l\'92IA \'97 n\'e9 \'e0 Paris, curieux, maladroit et g\'e9nial.\
-\ D\'e9couvrir\
-\ \ \
-\
-Court-m\'e9trage : Fox C in Paris
-\
-\\
-\
-\ \ \
-\
-Foxi Universe : IA + Art + IoT + Psych\'e9
-\
-\ D\'e9couvrez les prototypes AIoT de Fox C \'97 les renards intelligents qui \'e9voluent avec vous.\
-\
-\ \ \ \
-\
-\ \ \
-\
-Rejoignez la r\'e9volution de Foxi
-\
-Laissez-nous votre email pour recevoir les prochaines nouvelles et prototypes.
-\
-\ \ Envoyer\
-\
-\ \ \
-\
-© 2025 Fox C. All Rights Reserved.
-\
-\ \ \ \ \ }
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fox C — Le Paddington de l’IA</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    body { font-family:'Inter',sans-serif; background-color:#000; color:#fff; }
+    .accent-red { color:#ff2e2e; }
+    .btn-red { background:#ff2e2e; }
+    .btn-red:hover { background:#e81c1c; }
+    .btn-blue { background:#00aaff; }
+    .btn-blue:hover { background:#0091d1; }
+    .fade-in { opacity:0; transform:translateY(20px); transition:all .8s ease; }
+    .fade-in.visible { opacity:1; transform:none; }
+  </style>
+</head>
+<body class="overflow-x-hidden">
+
+<!-- Lang switcher -->
+<div class="fixed top-4 right-4 z-50 flex space-x-2">
+  <button class="lang-btn w-9 h-9 rounded-full bg-gray-700 hover:bg-gray-600" onclick="changeLang('fr')">🇫🇷</button>
+  <button class="lang-btn w-9 h-9 rounded-full bg-gray-700 hover:bg-gray-600" onclick="changeLang('en')">🇬🇧</button>
+  <button class="lang-btn w-9 h-9 rounded-full bg-gray-700 hover:bg-gray-600" onclick="changeLang('zh')">🇨🇳</button>
+  <button class="lang-btn w-9 h-9 rounded-full bg-gray-700 hover:bg-gray-600" onclick="changeLang('ja')">🇯🇵</button>
+</div>
+
+<!-- Hero -->
+<section class="min-h-screen flex flex-col justify-center items-center text-center px-6">
+  <h1 data-i18n="heroTitle" class="text-5xl md:text-7xl font-extrabold mb-6 accent-red">Fox C</h1>
+  <p data-i18n="heroSubtitle" class="text-xl md:text-2xl text-gray-300 max-w-2xl">
+    Le Paddington de l’IA — né à Paris, curieux, maladroit et génial.
+  </p>
+  <a href="#video" class="mt-10 btn-red text-white px-8 py-3 rounded-full font-semibold transition">Découvrir</a>
+</section>
+
+<!-- Video section -->
+<section id="video" class="py-20 bg-gradient-to-b from-black to-gray-900 text-center px-4 fade-in">
+  <h2 data-i18n="videoTitle" class="text-3xl font-bold mb-8">Court-métrage : Fox C in Paris</h2>
+  <div class="flex justify-center">
+    <iframe width="960" height="540"
+      src="https://www.youtube.com/embed?listType=user_uploads&list=FoxC%E7%A6%8F%E4%BA%8B%E3%81%B6%E3%81%98"
+      title="Fox C YouTube"
+      frameborder="0" allowfullscreen
+      class="rounded-xl shadow-lg w-full max-w-4xl"></iframe>
+  </div>
+</section>
+
+<!-- Hardware / Project -->
+<section id="hardware" class="py-20 text-center px-6 fade-in">
+  <h2 data-i18n="hardwareTitle" class="text-3xl font-bold mb-10 accent-red">Foxi Universe : IA + Art + IoT + Psyché</h2>
+  <p data-i18n="hardwareDesc" class="text-gray-300 max-w-3xl mx-auto mb-12">
+    Découvrez les prototypes AIoT de Fox C — les renards intelligents qui évoluent avec vous.
+  </p>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+    <img src="https://placehold.co/400x400/ff2e2e/ffffff?text=Prototype+1" class="rounded-xl shadow-lg" alt="Prototype 1">
+    <img src="https://placehold.co/400x400/222222/ffffff?text=Prototype+2" class="rounded-xl shadow-lg" alt="Prototype 2">
+    <img src="https://placehold.co/400x400/00aaff/ffffff?text=Prototype+3" class="rounded-xl shadow-lg" alt="Prototype 3">
+  </div>
+</section>
+
+<!-- Email form -->
+<section id="newsletter" class="py-20 bg-gray-900 text-center fade-in px-4">
+  <h2 data-i18n="joinTitle" class="text-3xl font-bold mb-6">Rejoignez la révolution de Foxi</h2>
+  <p data-i18n="joinSubtitle" class="text-gray-400 mb-8 max-w-xl mx-auto">Laissez-nous votre email pour recevoir les prochaines nouvelles et prototypes.</p>
+  <form action="https://formspree.io/f/mwprqaqr" method="POST" class="max-w-md mx-auto">
+    <input type="email" name="email" required placeholder="Votre email" class="w-full px-4 py-3 rounded-lg mb-4 text-black" />
+    <button type="submit" class="btn-blue text-white px-8 py-3 rounded-full font-semibold transition">Envoyer</button>
+  </form>
+</section>
+
+<!-- Footer -->
+<footer class="py-8 text-center text-sm text-gray-500">
+  <p>&copy; 2025 Fox C. All Rights Reserved.</p>
+</footer>
+<script>
+  // 多语言字典
+  const i18n = {
+    fr: {
+      heroTitle: "Fox C",
+      heroSubtitle: "Le Paddington de l’IA — né à Paris, curieux, maladroit et génial.",
+      videoTitle: "Court-métrage : Fox C in Paris",
+      hardwareTitle: "Foxi Universe : IA + Art + IoT + Psyché",
+      hardwareDesc: "Découvrez les prototypes AIoT de Fox C — les renards intelligents qui évoluent avec vous.",
+      joinTitle: "Rejoignez la révolution de Foxi",
+      joinSubtitle: "Laissez-nous votre email pour recevoir les prochaines nouvelles et prototypes."
+    },
+    en: {
+      heroTitle: "Fox C",
+      heroSubtitle: "The Paddington of AI — born in Paris, curious, clumsy and brilliant.",
+      videoTitle: "Short Film: Fox C in Paris",
+      hardwareTitle: "Foxi Universe: AI + Art + IoT + Psyche",
+      hardwareDesc: "Discover Fox C's AIoT prototypes — intelligent foxes that evolve with you.",
+      joinTitle: "Join the Foxi Revolution",
+      joinSubtitle: "Leave your email to get updates and prototypes."
+    },
+    zh: {
+      heroTitle: "Fox C",
+      heroSubtitle: "AI界的帕丁顿熊——来自巴黎，笨拙又聪明的狐狸。",
+      videoTitle: "短片：《Fox C在巴黎》",
+      hardwareTitle: "Foxi 宇宙：AI + 艺术 + 物联网 + 心灵",
+      hardwareDesc: "探索Fox C的AIoT原型——那些会与你共同成长的智能狐狸。",
+      joinTitle: "加入Foxi革命",
+      joinSubtitle: "留下你的邮箱，获取最新动态与原型。"
+    },
+    ja: {
+      heroTitle: "Fox C",
+      heroSubtitle: "AI界のパディントン。パリ生まれの、不器用で天才的なキツネ。",
+      videoTitle: "ショートフィルム：Fox C in Paris",
+      hardwareTitle: "Foxi Universe：AI + アート + IoT + サイコ",
+      hardwareDesc: "Fox CのAIoTプロトタイプを探検しよう — あなたと共に進化する知能的なキツネたち。",
+      joinTitle: "Foxi革命に参加しよう",
+      joinSubtitle: "メールを登録して最新情報とプロトタイプを受け取ろう。"
+    }
+  };
+
+  // 语言切换
+  function changeLang(lang) {
+    document.documentElement.lang = lang;
+    document.querySelectorAll("[data-i18n]").forEach(el => {
+      const key = el.dataset.i18n;
+      el.innerText = i18n[lang][key] || i18n.fr[key] || "";
+    });
+  }
+
+  // 初始加载
+  document.addEventListener("DOMContentLoaded", () => {
+    changeLang("fr");
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) e.target.classList.add("visible");
+      });
+    }, { threshold: 0.2 });
+    document.querySelectorAll(".fade-in").forEach(el => observer.observe(el));
+  });
+</script>
+
+</body>
+</html>
